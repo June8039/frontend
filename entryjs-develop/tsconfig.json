@@ -10,7 +10,11 @@
         "allowJs": true,
         "baseUrl": "./",
         "typeRoots": ["./types", "./node_modules/@types"],
-        "allowSyntheticDefaultImports": true
+        "allowSyntheticDefaultImports": true,
+
+        //added it to prevent overwrite errors
+        "noEmit": true,             // do not output compiled JS files
+        "skipLibCheck": true
     },
     "include": [
         "src/**/*.ts",
